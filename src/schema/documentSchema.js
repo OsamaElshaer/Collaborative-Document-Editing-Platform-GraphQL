@@ -20,6 +20,11 @@ const documentSchema = gql`
         deleteDocument(id: ID!): Boolean
         shareDocument(documentId: ID!, userId: ID!): Document
     }
+    
+    type Subscription {
+        documentUpdated: Document
+        documentDeleted: ID
+    }
 `;
 
 module.exports = documentSchema;

@@ -1,0 +1,23 @@
+{
+    "name": "collaborative-document-editing-platform",
+    "version": "1.0.0",
+    "description": "",
+    "main": "src/server.js",
+    "scripts": {
+        "start": "nodemon src/server.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@apollo/server": "^4.10.5",
+        "@graphql-tools/utils": "^10.3.2",
+        "apollo-server": "^3.13.0",
+        "bcryptjs": "^2.4.3",
+        "dotenv": "^16.4.5",
+        "graphql-subscriptions": "^2.0.0",
+        "graphql-ws": "^5.16.0",
+        "jsonwebtoken": "^9.0.2",
+        "mongoose": "^8.5.1",
+        "ws": "^8.18.0"
+    }
+}

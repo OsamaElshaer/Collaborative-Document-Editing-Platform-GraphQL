@@ -65,6 +65,11 @@ const documentResolvers = {
             return document.populate("author").populate("sharedWith");
         },
     },
+
+    Subscription: {
+        ...require("../subscriptions/documentSubscriptions")
+            .documentSubscriptions.Subscription,
+    },
 };
 
 module.exports = documentResolvers;
